@@ -17,5 +17,5 @@ function copyToClipboard(elementId) {
     document.body.removeChild(tempInput);
     window.getSelection().removeAllRanges();
 
-    alert('복사되었습니다: ' + textElement.innerText);
+    alert('이메일이 복사되었습니다');
 }
