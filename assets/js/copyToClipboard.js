@@ -17,8 +17,9 @@ function copyToClipboard(elementId) {
     document.body.removeChild(tempInput);
     window.getSelection().removeAllRanges();
 
-    alert('이메일이 복사되었습니다');
-
-    
+    alert('이메일이 복사되었습니다');    
+            
+    var contactSection = document.getElementById('contact');
+    contactSection.scrollIntoView();
 }
 
