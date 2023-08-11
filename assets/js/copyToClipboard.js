@@ -16,10 +16,5 @@ function copyToClipboard(elementId) {
     // 임시 input 요소와 선택을 해제합니다.
     document.body.removeChild(tempInput);
     window.getSelection().removeAllRanges();
-
-    alert('이메일이 복사되었습니다');    
-            
-    var contactSection = document.getElementById('contact'); 
-    contactSection.scrollIntoView();
 }
 
