@@ -19,7 +19,7 @@ function copyToClipboard(elementId) {
 
     alert('이메일이 복사되었습니다');    
             
-    var contactSection = document.getElementById('contact');
+    var contactSection = document.getElementById(elementId); //'contact'
     contactSection.scrollIntoView();
 }
 
