@@ -1,4 +1,4 @@
-function copyToClipboard(elementId) {
+/*function copyToClipboard(elementId) {
     // 텍스트를 복사할 요소를 가져옵니다.
     var textElement = document.getElementById(elementId);
 
@@ -16,5 +16,17 @@ function copyToClipboard(elementId) {
     // 임시 input 요소와 선택을 해제합니다.
     document.body.removeChild(tempInput);
     window.getSelection().removeAllRanges();
+}*/
+
+function copyToClipboard(elementId) {
+    var textElement = document.getElementById(elementId);
+    
+    navigator.clipboard.writeText(textElement.innerText)
+        .then(() => {
+            console.log('Text copied to clipboard');
+        })
+        .catch((error) => {
+            console.error('Failed to copy text:', error);
+        });
 }
 
